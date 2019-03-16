@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Autour+One|Flavors|Offside" rel="stylesheet">
+		<link href="style.css" type="text/css" rel="stylesheet">	
+	</head>
+	<body>
+		<div class="gameContainer">
+			<!-- left column -->
+			<div class="gamePadArea">
+				<!-- container area where balls appear -->
+				<div class="gamePad">
+				</div> 
+
+				<div class="popupOverlay">
+					<!-- card for score alert -->
+					<div class="scoreAlert">
+						<div class="level">Level 1</div><br>
+						<div class="score"><span class="points">1234</span>&nbsp;Points</div><br>
+						<div><button class="button" id="next-button">Next</button></div>
+					</div> 
+
+					<!-- card for game over -->
+					<div class="gameOver">
+						<h3 class="gameOverHeader">GAME OVER :(</h3>
+						<h3 class="gameFinishHeader">Congrats!!! You've completed the game. :)</h3>
+						<div class="level">Level 1</div><br>
+						<div class="score">Total Score: <span class="points">1234</span>&nbsp;Points</div><br>
+						<div><button class="button" id="start-new-game">Start Again</button></div>
+					</div> 
+				</div>
+			</div>  
+
+			<!-- details about game -->
+			<div class="otherArea">
+				<!-- players List -->
+				<div>
+					<select id="user">
+						<option value="user 1" selected>user 1</option>
+						<option value="user 2" >user 2</option>
+					</select>
+					<br>
+					<input type="text" id="newPlayerName" placeholder="Type new player's name & press ⏎">
+				</div>
+
+				<!-- highest score details -->
+				<div class="highestScore">
+					<h3>Highest Score</h3><br>
+				</div>
+
+				<!-- playes score details as overall -->
+				<div class="scoreBoard">
+					<h3>Score Board</h3><br>
+					<div class="scoreBoardCardContainer"></div>
+				</div>
+			</div> 
+		</div>
+
+		<script src="ball.js"></script> 
+		<script src="game.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
