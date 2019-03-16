@@ -1,6 +1,8 @@
 body{
 	background: #666;
 	font-family: 'Flavors', cursive;
+	margin: 0;
+	padding: 15px;
 }
 
 select, input {
@@ -14,12 +16,17 @@ select, input {
 	font-family: 'Autour One', cursive;
     border: 0px;
     border-radius: 3px;
+    box-sizing: border-box;
 }
 
 input::placeholder{
 	color: #fff;
 	opacity: 0.5;
 	font-size: 12px;
+}
+
+.width-100 {
+	width: 100%;
 }
 
 .scoreBoard, .highestScore {
