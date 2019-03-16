@@ -22,6 +22,31 @@ input::placeholder{
 	font-size: 12px;
 }
 
+.scoreBoard, .highestScore {
+	color: #fff;
+	font-family: 'Autour One', cursive;
+	padding: 10px;
+    background: #666;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.highestScore {
+	color: #2ecc71;
+}
+
+.scoreBoard  .scoreCard {
+	margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.scoreBoardCardContainer {
+	overflow: auto;
+	max-height: 330px;
+}
+
 .popupOverlay{
 	display: none;
 	position: absolute;
@@ -79,6 +104,26 @@ input::placeholder{
   	text-align: center;
   	padding: 25px;
   	box-sizing: border-box;
+}
+
+.gamePadArea .gameOver.gameFinished {
+	background: #2ecc71;
+	width: 65%;
+	height: 65%;
+}
+
+.gamePadArea .gameOver .gameFinishHeader{
+	display: none;
+}
+
+.gamePadArea .gameOver.gameFinished .gameFinishHeader{
+	display: block;
+}
+
+
+
+.gamePadArea .gameOver.gameFinished .gameOverHeader{
+	display: none;
 }
 
 .gamePadArea .gameOver {
